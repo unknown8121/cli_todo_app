@@ -29,7 +29,7 @@ def main():
                     try:
                         to_delete = int(input("index number: "))
                     except ValueError:
-                        input("Please Provide number next time")
+                        input("Please Provide number next time...")
 
                     about_to_delete = to_delete - 1
                     try:
@@ -42,7 +42,7 @@ def main():
                 break
         except ValueError:
             print("Please Provide Valid Input!")
-        except:
+        except:  # noqa: E722
             print("Something went wrong!")
 
 
